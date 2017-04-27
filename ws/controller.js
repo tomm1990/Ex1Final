@@ -7,7 +7,7 @@
 /*
  requires and imports
  */
-var Account = require('./account.js').Account,
+const Account = require('./account.js').Account,
     displayBalance = require("./account.js").displayBalance,
     checkOverDraw = require("./account.js").checkOverDraw,
     checkGoal = require("./account.js").checkGoal;
@@ -22,7 +22,7 @@ jsonObj[key] = [];
 /*
  account creation
  */
-var account = new Account();
+const account = new Account();
 account.on("balanceChanged", displayBalance);
 account.on("balanceChanged", checkOverDraw);
 account.on("balanceChanged", function(){

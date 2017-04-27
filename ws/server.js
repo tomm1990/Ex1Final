@@ -5,8 +5,7 @@
 /*
  default settings
  */
-const http = require('http'),
-    express = require('express'),
+const express = require('express'),
     app = express(),
     controller = require('./controller.js'),
     port = process.env.PORT || 3000;
